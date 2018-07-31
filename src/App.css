@@ -1,0 +1,105 @@
+body {
+  font-family: avenir;
+  background-color: black;
+  color : grey;
+}
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-auto-rows: 90px;
+}
+.userName {
+  grid-column: span 3;
+}
+.descriptionBox {
+  grid-column: span 11;
+  text-align: center;
+  margin-top: 3%;
+}
+.searchBar {
+  grid-column: span 4;
+  margin: auto;
+}
+
+.searchBox {
+  margin-top: 6%;
+  background-color: rgba(88, 87, 87, 0.61);
+  border-radius: 15px;
+  border: none;
+  color: grey;
+  font-family: inherit;
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.searchBox:focus {
+  outline: unset;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  color: grey;
+  margin-left: -30px;
+  font-size: 14px;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+  color: rgb(161, 161, 161);
+}
+
+.searchButton:focus {
+  outline: unset;
+}
+
+.repoName {
+  margin-top: 30%;
+}
+
+.reposBox {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  background-color: #54a1f8;
+  color: azure;
+  margin: 10px;
+  animation: fadeIn 3s;
+}
+.container {
+  width: 100%;
+  margin:auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+.reposBox:hover {
+  animation: fadeIn 2s !important;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 78px -11px rgba(255,255,255,0.84);
+}
+
+.invalidUserMessage {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  display: inline-block;
+  flex-direction: column;
+  line-height: 10;
+}
+
+.ribbon {
+  visibility: hidden;
+  color: white;
+  font-size: 13px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
