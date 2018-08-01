@@ -60,9 +60,9 @@ class App extends Component {
       return <div>Loading...</div>;
     } else {
       return (<Repos 
-      items={this.state.items} 
-      usernameUpdater={this.updateUsername}
-      username={this.state.username}/>);
+                  items={this.state.items} 
+                  usernameUpdater={this.updateUsername}
+                  username={this.state.username}/>);
     }
   }
 }
